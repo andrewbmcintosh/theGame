@@ -1,0 +1,50 @@
+.container {
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px 40px 40px 40px;
+grid-template-rows: 40px 40px 40px 40px 40px 40px ;
+grid-column-gap: 5px;
+grid-row-gap: 5px;
+}
+.containerTwo {
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px 40px 40px 40px;
+grid-template-rows: 40px 40px 40px 40px 40px 40px ;
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+}
+.columnOneGrid {
+    display: grid;
+    grid-row-start:1;
+    grid-row-end: 6;
+    grid-column-start: 1;
+
+}
+.columnTwoGrid {
+    display: grid;
+    grid-row-start:1;
+    grid-row-end: 6;
+    grid-column-start: 2;
+
+}
+.columnThreeGrid {
+    display: grid;
+    grid-row-start:1;
+    grid-row-end: 6;
+    grid-column-start: 3;
+}
+
+.columnOne {
+    grid-row-start: 1;
+    grid-row-end: 7;
+
+}
+
+.columnTwo {
+   grid-row-start: 1;
+   grid-row-end: 6;
+}
+
+#16 {
+    grid-row: 2;
+    grid-column: 3;
+}
