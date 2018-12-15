@@ -77,7 +77,6 @@ $(document).click(function () {
 
 });
 
-
 $(".disc").each(function (index) {
     console.log(index + ": " + $(this).text());
 });
@@ -85,12 +84,10 @@ $(".disc").each(function (index) {
 // Next Adjacent Selector will declare winner for columns
 $(" .playerTwoItem + .playerTwoItem + .playerTwoItem + .playerTwoItem")
 
-// if length = 1 of the Adjacent Selector  will alert winner
-$('document').click(function () {
-    if ($(" .playerTwoItem + .playerTwoItem + .playerTwoItem + .playerTwoItem").length = 1) {
-        alert("Player Two Wins");
-    }
-});
+// if length = 1 of the Adjacent Selector  will alert winner. NEED TO FIND WAY TO CALL THIS IFF STATEMENT
+if ($(" .playerTwoItem + .playerTwoItem + .playerTwoItem + .playerTwoItem").length == 1) {
+    alert("Player Two Wins");
+}
 
 // TRASH BELOW \|/ TRASH BELOW \|/
 //     console.log(($('.disc').map(function (index, element) {
