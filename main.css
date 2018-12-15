@@ -3,8 +3,19 @@
     grid-template-columns: 40px 40px 40px 40px 40px 40px 40px;
 grid-gap: 10px;
 }
+.disc {
+
+}
+
 .playerOneItem {
     background: red;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    
+}
+.playerTwoItem {
+    background: blue;
     width: 40px;
     height: 40px;
     margin: 5px;
@@ -16,7 +27,8 @@ grid-gap: 10px;
     flex-flow: column-reverse;
 grid-gap: 10px;
 grid-column: 1;
-flex: 0 0 300px; 
+flex: 0 0 300px;
+min-height: 290px;
 }
 .columnTwo {
     display: flex;
@@ -24,34 +36,51 @@ flex: 0 0 300px;
 grid-gap: 10px;
 grid-column: 2;
 flex: 0 0 300px;
+min-height: 305px;
+
 }
 .columnThree {
-    display: grid;
-    grid-template-rows: 40px 40px 40px 40px 40px 40px ;
+    display: flex;
+    flex-flow: column-reverse;
 grid-gap: 10px;
-grid-column: 3;   
+grid-column: 3;
+flex: 0 0 300px;  
+min-height: 305px;
+
 }
 .columnFour {
-    display: grid;
-    grid-template-rows: 40px 40px 40px 40px 40px 40px ;
+    display: flex;
+    flex-flow: column-reverse;
 grid-gap: 10px;
-grid-column: 4;   
+grid-column: 4;
+flex: 0 0 300px;   
+min-height: 305px;
+
 }
 .columnFive {
-    display: grid;
-    grid-template-rows: 40px 40px 40px 40px 40px 40px ;
+    display: flex;
+    flex-flow: column-reverse;
 grid-gap: 10px;
-grid-column: 5;   
+grid-column: 5;
+flex: 0 0 300px; 
+min-height: 305px;
+
 }
 .columnSix {
-    display: grid;
-    grid-template-rows: 40px 40px 40px 40px 40px 40px ;
+    display: flex;
+    flex-flow: column-reverse;
 grid-gap: 10px;
-grid-column: 6;   
+grid-column: 6;
+flex: 0 0 300px;   
+min-height: 305px;
+
 }
 .columnSeven {
-    display: grid;
-    grid-template-rows: 40px 40px 40px 40px 40px 40px ;
+    display: flex;
+    flex-flow: column-reverse;
 grid-gap: 10px;
-grid-column: 7;   
+grid-column: 7;
+flex: 0 0 300px; 
+min-height: 305px;
+
 }
