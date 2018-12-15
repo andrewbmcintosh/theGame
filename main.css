@@ -1,57 +1,56 @@
 .container {
     display: grid;
     grid-template-columns: 40px 40px 40px 40px 40px 40px 40px;
-grid-template-rows: 40px 40px 40px 40px 40px 40px ;
 grid-gap: 10px;
 }
-
-
-
-/* RESTART AFTER BELOW */
-/* .containerTwo {
-    display: grid;
-    grid-template-columns: 40px 40px 40px 40px 40px 40px 40px;
-grid-template-rows: 40px 40px 40px 40px 40px 40px ;
-grid-column-gap: 10px;
-grid-row-gap: 10px;
-}
-.columnOneGrid {
-    display: grid;
-    align-content: end;
-    grid-row-start:1;
-    grid-row-end: 6;
-    grid-column-start: 1;
-    grid-row-gap: 5px;
-}
-.columnTwoGrid {
-    display: grid;
-    grid-row-start:1;
-    grid-row-end: 6;
-    grid-column-start: 2;
-    grid-row-gap: 5px;
-
-}
-.columnThreeGrid {
-    display: grid;
-    grid-row-start:1;
-    grid-row-end: 6;
-    grid-column-start: 3;
-    grid-row-gap: 5px;
-}
-
-.columnOne {
-    grid-row-start: 1;
-    grid-row-end: 7;
+.item {
+    background: red;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
     
-
 }
-
+/* the column grids */
+.columnOne {
+    display: grid;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px ;
+grid-gap: 10px;
+grid-column: 1;   
+}
 .columnTwo {
-   grid-row-start: 1;
-   grid-row-end: 6;
+    display: flex;
+    flex-flow: column-reverse;
+grid-gap: 10px;
+grid-column: 2;
+flex: 0 0 300px;
 }
-
-#16 {
-    grid-row: 2;
-    grid-column: 3;
-} */
+.columnThree {
+    display: grid;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px ;
+grid-gap: 10px;
+grid-column: 3;   
+}
+.columnFour {
+    display: grid;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px ;
+grid-gap: 10px;
+grid-column: 4;   
+}
+.columnFive {
+    display: grid;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px ;
+grid-gap: 10px;
+grid-column: 5;   
+}
+.columnSix {
+    display: grid;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px ;
+grid-gap: 10px;
+grid-column: 6;   
+}
+.columnSeven {
+    display: grid;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px ;
+grid-gap: 10px;
+grid-column: 7;   
+}
