@@ -71,8 +71,28 @@ $(".columnSeven").click(function () {
 
 $(document).click(function () {
     console.log($('.columnTwo').children());
+
+
+
+
 });
 
+
+$(".disc").each(function (index) {
+    console.log(index + ": " + $(this).text());
+});
+
+// Next Adjacent Selector will declare winner for columns
+$(" .playerTwoItem + .playerTwoItem + .playerTwoItem + .playerTwoItem")
+
+// if length = 1 of the Adjacent Selector  will alert winner
+$('document').click(function () {
+    if ($(" .playerTwoItem + .playerTwoItem + .playerTwoItem + .playerTwoItem").length = 1) {
+        alert("Player Two Wins");
+    }
+});
+
+// TRASH BELOW \|/ TRASH BELOW \|/
 //     console.log(($('.disc').map(function (index, element) {
 //         console.log($(element).text());
 //     }).get()));
