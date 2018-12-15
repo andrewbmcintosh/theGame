@@ -68,5 +68,16 @@ $(".columnSeven").click(function () {
 
     }
 })
+
+$(document).click(function () {
+    console.log($('.columnTwo').children());
+});
+
+//     console.log(($('.disc').map(function (index, element) {
+//         console.log($(element).text());
+//     }).get()));
+
+// });
+
 // need to do something that extends flex
 // container down the length of the column without having a grid display
