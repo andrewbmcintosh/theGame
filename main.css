@@ -3,7 +3,7 @@
     grid-template-columns: 40px 40px 40px 40px 40px 40px 40px;
 grid-gap: 10px;
 }
-.item {
+.playerOneItem {
     background: red;
     width: 40px;
     height: 40px;
@@ -12,10 +12,11 @@ grid-gap: 10px;
 }
 /* the column grids */
 .columnOne {
-    display: grid;
-    grid-template-rows: 40px 40px 40px 40px 40px 40px ;
+    display: flex;
+    flex-flow: column-reverse;
 grid-gap: 10px;
-grid-column: 1;   
+grid-column: 1;
+flex: 0 0 300px; 
 }
 .columnTwo {
     display: flex;
