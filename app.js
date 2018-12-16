@@ -82,22 +82,23 @@ $("input").map(function () {
     return $(this).val();
 })
 
-if (
-    $(".columnOne").children().eq(1) ==
-    $(".columnTwo").children().eq(1) ==
-    $(".columnThree").children().eq(1) ==
-    $(".columnFour").children().eq(1)) {
-    alert("your a winner!")
-}
+// does not work \|/
+// if (
+//     $(".columnOne").children().eq(1) ==
+//     $(".columnTwo").children().eq(1) ==
+//     $(".columnThree").children().eq(1) ==
+//     $(".columnFour").children().eq(1)) {
+//     alert("your a winner!")
+// }
 // $(".columnFive").children().eq(1)
 // $(".columnSix").children().eq(1)
 // $(".columnSeven").children().eq(1)
-
+// win alert does not work /|\
 
 
 // looping through eq with each?
 
-// pottentiall dont need below
+// pottential dont need below
 $(".disc").each(function (index) {
     console.log(index + ": " + $(this).text());
 });
