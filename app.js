@@ -68,15 +68,29 @@ $(".columnSeven").click(function () {
 
     }
 })
-
+// included the function below to see if player won on column
 $(document).click(function () {
     console.log($('.columnTwo').children());
-
-
-
-
+    if ($(" .playerTwoItem + .playerTwoItem + .playerTwoItem + .playerTwoItem").length == 1) {
+        alert("Player Two Wins");
+    }
 });
 
+// creating formula for finding row
+
+$(".columnOne").children().eq(1)
+$(".columnTwo").children().eq(1)
+$(".columnThree").children().eq(1)
+$(".columnFour").children().eq(1)
+$(".columnFive").children().eq(1)
+$(".columnSix").children().eq(1)
+$(".columnSeven").children().eq(1)
+
+
+
+// looping through eq with each?
+
+// pottentiall dont need below
 $(".disc").each(function (index) {
     console.log(index + ": " + $(this).text());
 });
@@ -85,9 +99,9 @@ $(".disc").each(function (index) {
 $(" .playerTwoItem + .playerTwoItem + .playerTwoItem + .playerTwoItem")
 
 // if length = 1 of the Adjacent Selector  will alert winner. NEED TO FIND WAY TO CALL THIS IFF STATEMENT
-if ($(" .playerTwoItem + .playerTwoItem + .playerTwoItem + .playerTwoItem").length == 1) {
-    alert("Player Two Wins");
-}
+// if ($(" .playerTwoItem + .playerTwoItem + .playerTwoItem + .playerTwoItem").length == 1) {
+//     alert("Player Two Wins");
+// }
 
 // TRASH BELOW \|/ TRASH BELOW \|/
 //     console.log(($('.disc').map(function (index, element) {
