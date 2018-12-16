@@ -78,13 +78,20 @@ $(document).click(function () {
 
 // creating formula for finding row
 
-$(".columnOne").children().eq(1)
-$(".columnTwo").children().eq(1)
-$(".columnThree").children().eq(1)
-$(".columnFour").children().eq(1)
-$(".columnFive").children().eq(1)
-$(".columnSix").children().eq(1)
-$(".columnSeven").children().eq(1)
+$("input").map(function () {
+    return $(this).val();
+})
+
+if (
+    $(".columnOne").children().eq(1) ==
+    $(".columnTwo").children().eq(1) ==
+    $(".columnThree").children().eq(1) ==
+    $(".columnFour").children().eq(1)) {
+    alert("your a winner!")
+}
+// $(".columnFive").children().eq(1)
+// $(".columnSix").children().eq(1)
+// $(".columnSeven").children().eq(1)
 
 
 
