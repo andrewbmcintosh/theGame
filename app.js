@@ -98,36 +98,33 @@ $(" .playerTwoItem + .playerTwoItem + .playerTwoItem + .playerTwoItem");
 // }
 
 // creating a button to test logic. ALSO the below if statement works. now will try to string together.
+let columnCounter = 0
 
-// let columnCounter = 2
 // function for playerTwo row win on column 1-4
-$('button').click(function () {
-    if ($('.columnOne').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
-        if ($('.columnTwo').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
-            if ($('.columnThree').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
-                if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
-                    console.log("connectFour!")
-                    alert("playerTwoWins!")
+$(document).click(function () {
+    for (let columnCounter = 0; columnCounter < 7; columnCounter++) {
+        if ($('.columnOne').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+            if ($('.columnTwo').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+                if ($('.columnThree').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+                    if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+                        console.log("connectFour!")
+                        playerTwoScore += 1;
+                        alert(playerTwoScore);
+                        $('.disc').remove();
+                    }
                 }
             }
         }
-    }
-    else {
-        console.log("doesnt work")
+        else {
+
+        }
     }
 })
 
 
-// function for playerTwo row win on column 2 - 5
-let columnCounter = 0
-
-$(document).click(function () {
-    for (let columnCounter = 0; columnCounter < 7; columnCounter++);
-    console.log(columnCounter)
-})
 // // function for playerTwo row win on column 2-5. There has got to be a way to make that first $ a variable so that you dont have to repeat code
 $(document).click(function () {
-    for (let columnCounter = 0; columnCounter < 6; columnCounter++) {
+    for (let columnCounter = 0; columnCounter < 7; columnCounter++) {
         if ($('.columnTwo').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
             if ($('.columnThree').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
                 if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
@@ -147,148 +144,174 @@ $(document).click(function () {
 })
 // function for playerTwo row win on column 3-6
 $(document).click(function () {
-    if ($('.columnThree').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
-        if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
-            if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
-                if ($('.columnSix').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
-                    console.log("connectFour!")
-                    alert("playerTwoWins!")
+    for (let columnCounter = 0; columnCounter < 7; columnCounter++) {
+        if ($('.columnThree').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+            if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+                if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+                    if ($('.columnSix').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+                        console.log("connectFour!")
+                        playerTwoScore += 1;
+                        alert(playerTwoScore);
+                        $('.disc').remove();
+                    }
                 }
             }
         }
-    }
-    else {
-        console.log("doesnt work")
+        else {
+        }
     }
 })
 // function for playerTwo row win on column 4-7
 $(document).click(function () {
-    if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
-        if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
-            if ($('.columnSix').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
-                if ($('.columnSeven').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
-                    console.log("connectFour!")
-                    alert("playerTwoWins!")
+    for (let columnCounter = 0; columnCounter < 7; columnCounter++) {
+        if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+            if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+                if ($('.columnSix').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+                    if ($('.columnSeven').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+                        console.log("connectFour!")
+                        playerTwoScore += 1;
+                        alert(playerTwoScore);
+                        $('.disc').remove();
+                    }
                 }
             }
         }
-    }
-    else {
-        console.log("doesnt work")
+        else {
+        }
     }
 });
 // function for playerTwo diagonal up win 1-4
 $(document).click(function () {
-    if ($('.columnOne').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
-        console.log(columnCounter)
-        if ($('.columnTwo').children().is('.playerTwoItem:nth-child(' + (columnCounter + 1) + ')') == true) {
+    for (let columnCounter = 0; columnCounter < 7; columnCounter++) {
+        if ($('.columnOne').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
             console.log(columnCounter)
-            if ($('.columnThree').children().is('.playerTwoItem:nth-child(' + (columnCounter + 2) + ')') == true) {
+            if ($('.columnTwo').children().is('.playerTwoItem:nth-child(' + (columnCounter + 1) + ')') == true) {
                 console.log(columnCounter)
-                if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + (columnCounter + 3) + ')') == true) {
-                    console.log("connectFour!")
-                    alert("playerTwoWins!")
+                if ($('.columnThree').children().is('.playerTwoItem:nth-child(' + (columnCounter + 2) + ')') == true) {
+                    console.log(columnCounter)
+                    if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + (columnCounter + 3) + ')') == true) {
+                        console.log("connectFour!")
+                        playerTwoScore += 1;
+                        alert(playerTwoScore);
+                        $('.disc').remove();
+                    }
                 }
             }
         }
-    }
-    else {
-        console.log("doesnt work")
+        else {
+        }
     }
 })
 // function for playerTwo diagonal down win 1-4
 $(document).click(function () {
-    if ($('.columnOne').children().is('.playerTwoItem:nth-child(' + (columnCounter + 3) + ')') == true) {
-        console.log(columnCounter)
-        if ($('.columnTwo').children().is('.playerTwoItem:nth-child(' + (columnCounter + 2) + ')') == true) {
+    for (let columnCounter = 0; columnCounter < 7; columnCounter++) {
+        if ($('.columnOne').children().is('.playerTwoItem:nth-child(' + (columnCounter + 3) + ')') == true) {
             console.log(columnCounter)
-            if ($('.columnThree').children().is('.playerTwoItem:nth-child(' + (columnCounter + 1) + ')') == true) {
+            if ($('.columnTwo').children().is('.playerTwoItem:nth-child(' + (columnCounter + 2) + ')') == true) {
                 console.log(columnCounter)
-                if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
-                    console.log("connectFour!")
-                    alert("playerTwoWins!")
+                if ($('.columnThree').children().is('.playerTwoItem:nth-child(' + (columnCounter + 1) + ')') == true) {
+                    console.log(columnCounter)
+                    if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+                        console.log("connectFour!")
+                        playerTwoScore += 1;
+                        alert(playerTwoScore);
+                        $('.disc').remove();
+                    }
                 }
             }
         }
-    }
-    else {
-        console.log("doesnt work")
+        else {
+        }
     }
 })
 // function for playerTwo diagonal up win 2-5
 $(document).click(function () {
-    if ($('.columnTwo').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
-        console.log(columnCounter)
-        if ($('.columnThree').children().is('.playerTwoItem:nth-child(' + (columnCounter + 1) + ')') == true) {
+    for (let columnCounter = 0; columnCounter < 7; columnCounter++) {
+        if ($('.columnTwo').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
             console.log(columnCounter)
-            if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + (columnCounter + 2) + ')') == true) {
+            if ($('.columnThree').children().is('.playerTwoItem:nth-child(' + (columnCounter + 1) + ')') == true) {
                 console.log(columnCounter)
-                if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + (columnCounter + 3) + ')') == true) {
-                    console.log("connectFour!")
-                    alert("playerTwoWins!")
+                if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + (columnCounter + 2) + ')') == true) {
+                    console.log(columnCounter)
+                    if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + (columnCounter + 3) + ')') == true) {
+                        console.log("connectFour!")
+                        playerTwoScore += 1;
+                        alert(playerTwoScore);
+                        $('.disc').remove();
+                    }
                 }
             }
         }
-    }
-    else {
-        console.log("doesnt work")
+        else {
+        }
     }
 })
 // function for playerTwo diagonal down win 2-5
 $(document).click(function () {
-    if ($('.columnTwo').children().is('.playerTwoItem:nth-child(' + (columnCounter + 3) + ')') == true) {
-        console.log(columnCounter)
-        if ($('.columnThree').children().is('.playerTwoItem:nth-child(' + (columnCounter + 2) + ')') == true) {
+    for (let columnCounter = 0; columnCounter < 7; columnCounter++) {
+
+        if ($('.columnTwo').children().is('.playerTwoItem:nth-child(' + (columnCounter + 3) + ')') == true) {
             console.log(columnCounter)
-            if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + (columnCounter + 1) + ')') == true) {
+            if ($('.columnThree').children().is('.playerTwoItem:nth-child(' + (columnCounter + 2) + ')') == true) {
                 console.log(columnCounter)
-                if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
-                    console.log("connectFour!")
-                    alert("playerTwoWins!")
+                if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + (columnCounter + 1) + ')') == true) {
+                    console.log(columnCounter)
+                    if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+                        console.log("connectFour!")
+                        playerTwoScore += 1;
+                        alert(playerTwoScore);
+                        $('.disc').remove();
+                    }
                 }
             }
         }
-    }
-    else {
-        console.log("doesnt work")
+        else {
+        }
     }
 })
 // function for playerTwo diagonal up win 3-6
 $(document).click(function () {
-    if ($('.columnThree').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
-        console.log(columnCounter)
-        if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + (columnCounter + 1) + ')') == true) {
+    for (let columnCounter = 0; columnCounter < 7; columnCounter++) {
+        if ($('.columnThree').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
             console.log(columnCounter)
-            if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + (columnCounter + 2) + ')') == true) {
+            if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + (columnCounter + 1) + ')') == true) {
                 console.log(columnCounter)
-                if ($('.columnSix').children().is('.playerTwoItem:nth-child(' + (columnCounter + 3) + ')') == true) {
-                    console.log("connectFour!")
-                    alert("playerTwoWins!")
+                if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + (columnCounter + 2) + ')') == true) {
+                    console.log(columnCounter)
+                    if ($('.columnSix').children().is('.playerTwoItem:nth-child(' + (columnCounter + 3) + ')') == true) {
+                        console.log("connectFour!")
+                        playerTwoScore += 1;
+                        alert(playerTwoScore);
+                        $('.disc').remove();
+                    }
                 }
             }
         }
-    }
-    else {
-        console.log("doesnt work")
+        else {
+        }
     }
 })
 // function for playerTwo diagonal down win 3-6
 $(document).click(function () {
-    if ($('.columnThree').children().is('.playerTwoItem:nth-child(' + (columnCounter + 3) + ')') == true) {
-        console.log(columnCounter)
-        if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + (columnCounter + 2) + ')') == true) {
+    for (let columnCounter = 0; columnCounter < 7; columnCounter++) {
+        if ($('.columnThree').children().is('.playerTwoItem:nth-child(' + (columnCounter + 3) + ')') == true) {
             console.log(columnCounter)
-            if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + (columnCounter + 1) + ')') == true) {
+            if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + (columnCounter + 2) + ')') == true) {
                 console.log(columnCounter)
-                if ($('.columnSix').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
-                    console.log("connectFour!")
-                    alert("playerTwoWins!")
+                if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + (columnCounter + 1) + ')') == true) {
+                    console.log(columnCounter)
+                    if ($('.columnSix').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+                        console.log("connectFour!")
+                        playerTwoScore += 1;
+                        alert(playerTwoScore);
+                        $('.disc').remove();
+                    }
                 }
             }
         }
-    }
-    else {
-        console.log("doesnt work")
+        else {
+            console.log("doesnt work")
+        }
     }
 })
 // function for playerTwo diagonal up win 4-7
