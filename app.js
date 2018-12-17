@@ -148,7 +148,7 @@ $('button').click(function () {
     }
 })
 // function for playerTwo row win on column 4-7
-$('button').click(function () {
+$(document).click(function () {
     if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
         if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
             if ($('.columnSix').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
@@ -164,7 +164,7 @@ $('button').click(function () {
     }
 });
 // function for playerTwo diagonal up win 1-4
-$('button').click(function () {
+$(document).click(function () {
     if ($('.columnOne').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
         console.log(columnCounter)
         if ($('.columnTwo').children().is('.playerTwoItem:nth-child(' + (columnCounter + 1) + ')') == true) {
