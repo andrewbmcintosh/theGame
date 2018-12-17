@@ -1,3 +1,6 @@
+let playerOneScore = 0;
+let playerTwoScore = 0;
+
 
 $(".columnOne").click(function () {
 
@@ -130,7 +133,9 @@ $(document).click(function () {
                 if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
                     if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
                         console.log("connectFour!")
-                        alert("playerTwoWins!")
+                        playerTwoScore += 1;
+                        alert(playerTwoScore);
+                        $('.disc').remove();
                     }
                 }
             }
