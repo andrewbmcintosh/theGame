@@ -88,18 +88,20 @@ $('.column').find('.playerTwoItem:nth-child(2)').length
 
 
 
-// creating a button to test logic
+// creating a button to test logic. ALSO the below if statement works. now will try to string together.
 let columnCounter = 2
 
 $('button').click(function () {
     if ($('.columnOne').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
-        console.log("if statement works")
+        if ($('.columnTwo').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+            console.log("nested works");
+        }
     } else {
         console.log("doesnt work")
     }
 })
 
-
+// attempting to nest if statements
 
 
 
