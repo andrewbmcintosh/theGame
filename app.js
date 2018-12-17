@@ -89,9 +89,9 @@ $('.column').find('.playerTwoItem:nth-child(2)').length
 
 
 // creating a button to test logic
-x = 2;
+
 $('button').click(function () {
-    if ($('.columnOne').children().is('.playerTwoItem:nth-child(' + x + ') == true) {
+    if ($('.columnOne').children().is('.playerTwoItem:nth-child(2)') == true) {
         console.log("if statement works")
     } else {
         console.log("doesnt work")
