@@ -316,73 +316,106 @@ $(document).click(function () {
 })
 // function for playerTwo diagonal up win 4-7
 $(document).click(function () {
-    if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
-        console.log(columnCounter)
-        if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + (columnCounter + 1) + ')') == true) {
+    for (let columnCounter = 0; columnCounter < 7; columnCounter++) {
+        if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
             console.log(columnCounter)
-            if ($('.columnSix').children().is('.playerTwoItem:nth-child(' + (columnCounter + 2) + ')') == true) {
+            if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + (columnCounter + 1) + ')') == true) {
                 console.log(columnCounter)
-                if ($('.columnSeven').children().is('.playerTwoItem:nth-child(' + (columnCounter + 3) + ')') == true) {
-                    console.log("connectFour!")
-                    alert("playerTwoWins!")
+                if ($('.columnSix').children().is('.playerTwoItem:nth-child(' + (columnCounter + 2) + ')') == true) {
+                    console.log(columnCounter)
+                    if ($('.columnSeven').children().is('.playerTwoItem:nth-child(' + (columnCounter + 3) + ')') == true) {
+                        console.log("connectFour!")
+                        playerTwoScore += 1;
+                        alert(playerTwoScore);
+                        $('.disc').remove();
+                    }
                 }
             }
         }
-    }
-    else {
-        console.log("doesnt work")
+        else {
+        }
     }
 })
 // function for playerTwo diagonal down win 4-7
 $(document).click(function () {
-    if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + (columnCounter + 3) + ')') == true) {
-        console.log(columnCounter)
-        if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + (columnCounter + 2) + ')') == true) {
+    for (let columnCounter = 0; columnCounter < 7; columnCounter++) {
+        if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + (columnCounter + 3) + ')') == true) {
             console.log(columnCounter)
-            if ($('.columnSix').children().is('.playerTwoItem:nth-child(' + (columnCounter + 1) + ')') == true) {
+            if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + (columnCounter + 2) + ')') == true) {
                 console.log(columnCounter)
-                if ($('.columnSeven').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
-                    console.log("connectFour!")
-                    alert("playerTwoWins!")
+                if ($('.columnSix').children().is('.playerTwoItem:nth-child(' + (columnCounter + 1) + ')') == true) {
+                    console.log(columnCounter)
+                    if ($('.columnSeven').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+                        console.log("connectFour!")
+                        playerTwoScore += 1;
+                        alert(playerTwoScore);
+                        $('.disc').remove();
+                    }
                 }
             }
         }
-    }
-    else {
-        console.log("doesnt work")
+        else {
+        }
     }
 })
 // below is playerOneWin
-// // function for playerOne row win on column 2-5. There has got to be a way to make that first $ a variable so that you dont have to repeat code
+// function for playerOne row win on column 1-4
 $(document).click(function () {
-    if ($('.columnTwo').children().is('.playerOneItem:nth-child(' + columnCounter + ')') == true) {
-        if ($('.columnThree').children().is('.playerOneItem:nth-child(' + columnCounter + ')') == true) {
-            if ($('.columnFour').children().is('.playerOneItem:nth-child(' + columnCounter + ')') == true) {
-                if ($('.columnFive').children().is('.playerOneItem:nth-child(' + columnCounter + ')') == true) {
-                    console.log("connectFour!")
-                    alert("playerOneWins!")
+    for (let columnCounter = 0; columnCounter < 7; columnCounter++) {
+        if ($('.columnOne').children().is('.playerOneItem:nth-child(' + columnCounter + ')') == true) {
+            if ($('.columnTwo').children().is('.playerOneItem:nth-child(' + columnCounter + ')') == true) {
+                if ($('.columnThree').children().is('.playerOneItem:nth-child(' + columnCounter + ')') == true) {
+                    if ($('.columnFour').children().is('.playerOneItem:nth-child(' + columnCounter + ')') == true) {
+                        console.log("connectFour!")
+                        playerOneScore += 1;
+                        alert(playerOneScore);
+                        $('.disc').remove();
+                    }
                 }
             }
         }
+        else {
+
+        }
     }
-    else {
-        console.log("doesnt work")
+})
+// // function for playerOne row win on column 2-5. There has got to be a way to make that first $ a variable so that you dont have to repeat code
+$(document).click(function () {
+    for (let columnCounter = 0; columnCounter < 7; columnCounter++) {
+        if ($('.columnTwo').children().is('.playerOneItem:nth-child(' + columnCounter + ')') == true) {
+            if ($('.columnThree').children().is('.playerOneItem:nth-child(' + columnCounter + ')') == true) {
+                if ($('.columnFour').children().is('.playerOneItem:nth-child(' + columnCounter + ')') == true) {
+                    if ($('.columnFive').children().is('.playerOneItem:nth-child(' + columnCounter + ')') == true) {
+                        console.log("connectFour!")
+                        playerOneScore += 1;
+                        alert(playerOneScore);
+                        $('.disc').remove();
+                    }
+                }
+            }
+        }
+        else {
+        }
     }
 })
 // function for playerOne row win on column 3-6
 $(document).click(function () {
-    if ($('.columnThree').children().is('.playerOneItem:nth-child(' + columnCounter + ')') == true) {
-        if ($('.columnFour').children().is('.playerOneItem:nth-child(' + columnCounter + ')') == true) {
-            if ($('.columnFive').children().is('.playerOneItem:nth-child(' + columnCounter + ')') == true) {
-                if ($('.columnSix').children().is('.playerOneItem:nth-child(' + columnCounter + ')') == true) {
-                    console.log("connectFour!")
-                    alert("playerOneWins!")
+    for (let columnCounter = 0; columnCounter < 7; columnCounter++) {
+        if ($('.columnThree').children().is('.playerOneItem:nth-child(' + columnCounter + ')') == true) {
+            if ($('.columnFour').children().is('.playerOneItem:nth-child(' + columnCounter + ')') == true) {
+                if ($('.columnFive').children().is('.playerOneItem:nth-child(' + columnCounter + ')') == true) {
+                    if ($('.columnSix').children().is('.playerOneItem:nth-child(' + columnCounter + ')') == true) {
+                        console.log("connectFour!")
+                        playerOneScore += 1;
+                        alert(playerOneScore);
+                        $('.disc').remove();
+                    }
                 }
             }
         }
-    }
-    else {
-        console.log("doesnt work")
+        else {
+            console.log("doesnt work")
+        }
     }
 })
 // function for playerOne row win on column 4-7
