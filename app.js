@@ -70,17 +70,56 @@ $(".columnSeven").click(function () {
 })
 // included the function below to see if player won on column
 $(document).click(function () {
-    console.log($('.columnTwo').children());
+    // console.log($('.columnTwo').children());
     if ($(" .playerTwoItem + .playerTwoItem + .playerTwoItem + .playerTwoItem").length == 1) {
         alert("Player Two Wins");
     }
 });
 
-// creating formula for finding row
+// THIS WORKS TO SEE IN COLUMN BEFORE
+$('.columnTwo').prev().children('.playerTwoItem:eq(0)')
 
-$("input").map(function () {
-    return $(this).val();
+
+// function gathers the items with the child index stated
+$('.playerTwoItem:nth-child(1)')
+
+// gathers all of the items that are a specific child and return the length
+$('.column').find('.playerTwoItem:nth-child(2)').length
+
+
+
+// creating a button to test logic
+x = 2;
+$('button').click(function () {
+    if ($('.columnOne').children().is('.playerTwoItem:nth-child(' + x + ') == true) {
+        console.log("if statement works")
+    } else {
+        console.log("doesnt work")
+    }
 })
+
+
+
+
+
+
+
+
+
+// let playerTwoItemEq = []
+
+// $('button').click(function () {
+//     $('playerTwoItem').each(function () {
+//         playerTwoItemEq += $(this).map()
+//         console.log(playerTwoItemEq)
+//     })
+// })
+
+
+
+
+
+// trash below 
 
 // does not work \|/
 // if (
