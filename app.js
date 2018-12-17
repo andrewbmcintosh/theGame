@@ -86,79 +86,232 @@ $('.playerTwoItem:nth-child(1)')
 // gathers all of the items that are a specific child and return the length
 $('.column').find('.playerTwoItem:nth-child(2)').length
 
-
-
-// creating a button to test logic. ALSO the below if statement works. now will try to string together.
-let columnCounter = 2
-
-$('button').click(function () {
-    if ($('.columnOne').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
-        if ($('.columnTwo').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
-            console.log("nested works");
-        }
-    } else {
-        console.log("doesnt work")
-    }
-})
-
-// attempting to nest if statements
-
-
-
-
-
-
-
-// let playerTwoItemEq = []
-
-// $('button').click(function () {
-//     $('playerTwoItem').each(function () {
-//         playerTwoItemEq += $(this).map()
-//         console.log(playerTwoItemEq)
-//     })
-// })
-
-
-
-
-
-// trash below 
-
-// does not work \|/
-// if (
-//     $(".columnOne").children().eq(1) ==
-//     $(".columnTwo").children().eq(1) ==
-//     $(".columnThree").children().eq(1) ==
-//     $(".columnFour").children().eq(1)) {
-//     alert("your a winner!")
-// }
-// $(".columnFive").children().eq(1)
-// $(".columnSix").children().eq(1)
-// $(".columnSeven").children().eq(1)
-// win alert does not work /|\
-
-
-// looping through eq with each?
-
-// pottential dont need below
-$(".disc").each(function (index) {
-    console.log(index + ": " + $(this).text());
-});
-
 // Next Adjacent Selector will declare winner for columns
-$(" .playerTwoItem + .playerTwoItem + .playerTwoItem + .playerTwoItem")
+$(" .playerTwoItem + .playerTwoItem + .playerTwoItem + .playerTwoItem");
 
 // if length = 1 of the Adjacent Selector  will alert winner. NEED TO FIND WAY TO CALL THIS IFF STATEMENT
 // if ($(" .playerTwoItem + .playerTwoItem + .playerTwoItem + .playerTwoItem").length == 1) {
 //     alert("Player Two Wins");
 // }
 
-// TRASH BELOW \|/ TRASH BELOW \|/
-//     console.log(($('.disc').map(function (index, element) {
-//         console.log($(element).text());
-//     }).get()));
+// creating a button to test logic. ALSO the below if statement works. now will try to string together.
 
-// });
-
-// need to do something that extends flex
-// container down the length of the column without having a grid display
+// let columnCounter = 2
+// function for playerTwo row win on column 1-4
+$('button').click(function () {
+    if ($('.columnOne').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+        if ($('.columnTwo').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+            if ($('.columnThree').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+                if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+                    console.log("connectFour!")
+                    alert("playerTwoWins!")
+                }
+            }
+        }
+    }
+    else {
+        console.log("doesnt work")
+    }
+})
+// function for playerTwo row win on column 2 - 5
+let columnCounter = 3
+// // function for playerTwo row win on column 2-5. There has got to be a way to make that first $ a variable so that you dont have to repeat code
+$('button').click(function () {
+    if ($('.columnTwo').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+        if ($('.columnThree').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+            if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+                if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+                    console.log("connectFour!")
+                    alert("playerTwoWins!")
+                }
+            }
+        }
+    }
+    else {
+        console.log("doesnt work")
+    }
+})
+// function for playerTwo row win on column 3-6
+$('button').click(function () {
+    if ($('.columnThree').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+        if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+            if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+                if ($('.columnSix').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+                    console.log("connectFour!")
+                    alert("playerTwoWins!")
+                }
+            }
+        }
+    }
+    else {
+        console.log("doesnt work")
+    }
+})
+// function for playerTwo row win on column 4-7
+$('button').click(function () {
+    if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+        if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+            if ($('.columnSix').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+                if ($('.columnSeven').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+                    console.log("connectFour!")
+                    alert("playerTwoWins!")
+                }
+            }
+        }
+    }
+    else {
+        console.log("doesnt work")
+    }
+});
+// function for playerTwo diagonal up win 1-4
+$('button').click(function () {
+    if ($('.columnOne').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+        console.log(columnCounter)
+        if ($('.columnTwo').children().is('.playerTwoItem:nth-child(' + (columnCounter + 1) + ')') == true) {
+            console.log(columnCounter)
+            if ($('.columnThree').children().is('.playerTwoItem:nth-child(' + (columnCounter + 2) + ')') == true) {
+                console.log(columnCounter)
+                if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + (columnCounter + 3) + ')') == true) {
+                    console.log("connectFour!")
+                    alert("playerTwoWins!")
+                }
+            }
+        }
+    }
+    else {
+        console.log("doesnt work")
+    }
+})
+// function for playerTwo diagonal down win 1-4
+$('button').click(function () {
+    if ($('.columnOne').children().is('.playerTwoItem:nth-child(' + (columnCounter + 3) + ')') == true) {
+        console.log(columnCounter)
+        if ($('.columnTwo').children().is('.playerTwoItem:nth-child(' + (columnCounter + 2) + ')') == true) {
+            console.log(columnCounter)
+            if ($('.columnThree').children().is('.playerTwoItem:nth-child(' + (columnCounter + 1) + ')') == true) {
+                console.log(columnCounter)
+                if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+                    console.log("connectFour!")
+                    alert("playerTwoWins!")
+                }
+            }
+        }
+    }
+    else {
+        console.log("doesnt work")
+    }
+})
+// function for playerTwo diagonal up win 2-5
+$('button').click(function () {
+    if ($('.columnTwo').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+        console.log(columnCounter)
+        if ($('.columnThree').children().is('.playerTwoItem:nth-child(' + (columnCounter + 1) + ')') == true) {
+            console.log(columnCounter)
+            if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + (columnCounter + 2) + ')') == true) {
+                console.log(columnCounter)
+                if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + (columnCounter + 3) + ')') == true) {
+                    console.log("connectFour!")
+                    alert("playerTwoWins!")
+                }
+            }
+        }
+    }
+    else {
+        console.log("doesnt work")
+    }
+})
+// function for playerTwo diagonal down win 2-5
+$('button').click(function () {
+    if ($('.columnTwo').children().is('.playerTwoItem:nth-child(' + (columnCounter + 3) + ')') == true) {
+        console.log(columnCounter)
+        if ($('.columnThree').children().is('.playerTwoItem:nth-child(' + (columnCounter + 2) + ')') == true) {
+            console.log(columnCounter)
+            if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + (columnCounter + 1) + ')') == true) {
+                console.log(columnCounter)
+                if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+                    console.log("connectFour!")
+                    alert("playerTwoWins!")
+                }
+            }
+        }
+    }
+    else {
+        console.log("doesnt work")
+    }
+})
+// function for playerTwo diagonal up win 3-6
+$('button').click(function () {
+    if ($('.columnThree').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+        console.log(columnCounter)
+        if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + (columnCounter + 1) + ')') == true) {
+            console.log(columnCounter)
+            if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + (columnCounter + 2) + ')') == true) {
+                console.log(columnCounter)
+                if ($('.columnSix').children().is('.playerTwoItem:nth-child(' + (columnCounter + 3) + ')') == true) {
+                    console.log("connectFour!")
+                    alert("playerTwoWins!")
+                }
+            }
+        }
+    }
+    else {
+        console.log("doesnt work")
+    }
+})
+// function for playerTwo diagonal down win 3-6
+$('button').click(function () {
+    if ($('.columnThree').children().is('.playerTwoItem:nth-child(' + (columnCounter + 3) + ')') == true) {
+        console.log(columnCounter)
+        if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + (columnCounter + 2) + ')') == true) {
+            console.log(columnCounter)
+            if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + (columnCounter + 1) + ')') == true) {
+                console.log(columnCounter)
+                if ($('.columnSix').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+                    console.log("connectFour!")
+                    alert("playerTwoWins!")
+                }
+            }
+        }
+    }
+    else {
+        console.log("doesnt work")
+    }
+})
+// function for playerTwo diagonal up win 4-7
+$('button').click(function () {
+    if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+        console.log(columnCounter)
+        if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + (columnCounter + 1) + ')') == true) {
+            console.log(columnCounter)
+            if ($('.columnSix').children().is('.playerTwoItem:nth-child(' + (columnCounter + 2) + ')') == true) {
+                console.log(columnCounter)
+                if ($('.columnSeven').children().is('.playerTwoItem:nth-child(' + (columnCounter + 3) + ')') == true) {
+                    console.log("connectFour!")
+                    alert("playerTwoWins!")
+                }
+            }
+        }
+    }
+    else {
+        console.log("doesnt work")
+    }
+})
+// function for playerTwo diagonal down win 4-7
+$('button').click(function () {
+    if ($('.columnFour').children().is('.playerTwoItem:nth-child(' + (columnCounter + 3) + ')') == true) {
+        console.log(columnCounter)
+        if ($('.columnFive').children().is('.playerTwoItem:nth-child(' + (columnCounter + 2) + ')') == true) {
+            console.log(columnCounter)
+            if ($('.columnSix').children().is('.playerTwoItem:nth-child(' + (columnCounter + 1) + ')') == true) {
+                console.log(columnCounter)
+                if ($('.columnSeven').children().is('.playerTwoItem:nth-child(' + columnCounter + ')') == true) {
+                    console.log("connectFour!")
+                    alert("playerTwoWins!")
+                }
+            }
+        }
+    }
+    else {
+        console.log("doesnt work")
+    }
+})
