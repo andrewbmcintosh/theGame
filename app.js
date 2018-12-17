@@ -71,13 +71,7 @@ $(".columnSeven").click(function () {
 
     }
 })
-// included the function below to see if player won on column
-$(document).click(function () {
-    // console.log($('.columnTwo').children());
-    if ($(" .playerTwoItem + .playerTwoItem + .playerTwoItem + .playerTwoItem").length == 1) {
-        alert("Player Two Wins");
-    }
-});
+
 
 // THIS WORKS TO SEE IN COLUMN BEFORE
 $('.columnTwo').prev().children('.playerTwoItem:eq(0)')
@@ -100,6 +94,24 @@ $(" .playerTwoItem + .playerTwoItem + .playerTwoItem + .playerTwoItem");
 // creating a button to test logic. ALSO the below if statement works. now will try to string together.
 let columnCounter = 0
 
+// function for playerTwo win for all columns
+$(document).click(function () {
+    if ($(" .playerTwoItem + .playerTwoItem + .playerTwoItem + .playerTwoItem").length == 1) {
+        console.log("connectFour!")
+        playerTwoScore += 1;
+        alert(playerTwoScore);
+        $('.disc').remove();
+    }
+});
+// function for playerOne win for all columns
+$(document).click(function () {
+    if ($(" .playerOneItem + .playerOneItem + .playerOneItem + .playerOneItem").length == 1) {
+        console.log("connectFour!")
+        playerOneScore += 1;
+        alert(playerOneScore);
+        $('.disc').remove();
+    }
+});
 // function for playerTwo row win on column 1-4
 $(document).click(function () {
     for (let columnCounter = 0; columnCounter < 7; columnCounter++) {
