@@ -21,18 +21,26 @@ html {
     /* min-width: 1152px;; */
     position: center;
 display: grid;
-grid-template-rows: repeat(40, 1fr);
-grid-template-columns: repeat(50, 1fr);
+grid-template-rows: repeat(400, 1fr);
+grid-template-columns: repeat(500, 1fr);
 
+}
+#masked {
+    -webkit-mask-image: url("https://jooinn.com/images/tv-screen-texture-31.jpg");
+    mask-image: url("https://jooinn.com/images/tv-screen-texture-31.jpg");
 }
 .container {
     position: relative;
     border: red;
-    grid-area: 7/16/20/30; 
+    grid-area: 62/171/192/285; 
     display: grid;
     background: url(style/backgroundTheGame.jpg) no-repeat;
     background-size: cover;
-    grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%
+    grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
+    border-radius: 25px;
+    filter: blur(.05px) saturate(60%) brightness(85%);
+    -webkit-mask-image: url("https://jooinn.com/images/tv-screen-texture-31.jpg");
+    mask-image: url("https://jooinn.com/images/tv-screen-texture-31.jpg");
 /* top: 128px;
 left: 373px;
 right: 676; */
