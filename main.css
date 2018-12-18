@@ -1,3 +1,12 @@
+body {
+    background-image: url("style/siteBackground.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 .container {
     display: grid;
     grid-template-columns: 40px 40px 40px 40px 40px 40px 40px;
