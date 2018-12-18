@@ -25,23 +25,25 @@ html {
 }
 .container {
     display: grid;
+    background: url(style/backgroundTheGame.jpg) no-repeat;
+    background-size: contain;
     grid-template-columns: 40px 40px 40px 40px 40px 40px 40px;
-grid-gap: 10px;
+grid-gap: 5px;
 }
 .disc {
 
 }
 
 .playerOneItem {
-    background: red;
-    width: 30px;
+    background-image: url(https://i.imgur.com/uSDBVV2.gif);
+    width: 33px;
     height: 30px;
     margin: 5px;
     
 }
 .playerTwoItem {
     background: blue;
-    width: 30px;
+    width: 33px;
     height: 30px;
     margin: 5px;
     
@@ -50,7 +52,7 @@ grid-gap: 10px;
 .columnOne {
     display: flex;
     flex-flow: column-reverse;
-grid-gap: 10px;
+grid-gap: 5px;
 grid-column: 1;
 flex: 0 0 230px;
 min-height: 230px;

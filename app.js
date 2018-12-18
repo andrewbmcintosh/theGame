@@ -5,18 +5,18 @@ let playerTwoScore = 0;
 $(".columnOne").click(function () {
 
     if ($(".disc").length % 2 == 0) {
-        $('.columnOne').append($('<div class="disc playerOneItem">test</div>'));
+        $('.columnOne').append($('<div class="disc playerOneItem"></div>'));
     } else {
-        $('.columnOne').append($('<div class="disc playerTwoItem">test</div>'));
+        $('.columnOne').append($('<div class="disc playerTwoItem"></div>'));
 
     }
 })
 $(".columnTwo").click(function () {
 
     if ($(".disc").length % 2 == 0) {
-        $('.columnTwo').append($('<div class="disc playerOneItem">test</div>'));
+        $('.columnTwo').append($('<div class="disc playerOneItem"></div>'));
     } else {
-        $('.columnTwo').append($('<div class="disc playerTwoItem">test</div>'));
+        $('.columnTwo').append($('<div class="disc playerTwoItem"></div>'));
 
     }
 })
@@ -25,9 +25,9 @@ $(".columnThree").click(function () {
     let columnTwoDiscCount = $('.columnTwo').children().length
 
     if ($(".disc").length % 2 == 0) {
-        $('.columnThree').append($('<div class="disc playerOneItem">test</div>'));
+        $('.columnThree').append($('<div class="disc playerOneItem"></div>'));
     } else {
-        $('.columnThree').append($('<div class="disc playerTwoItem">test</div>'));
+        $('.columnThree').append($('<div class="disc playerTwoItem"></div>'));
 
     }
 })
@@ -35,9 +35,9 @@ $(".columnFour").click(function () {
     let columnTwoDiscCount = $('.columnTwo').children().length
 
     if ($(".disc").length % 2 == 0) {
-        $('.columnFour').append($('<div class="disc playerOneItem">test</div>'));
+        $('.columnFour').append($('<div class="disc playerOneItem"></div>'));
     } else {
-        $('.columnFour').append($('<div class="disc playerTwoItem">test</div>'));
+        $('.columnFour').append($('<div class="disc playerTwoItem"></div>'));
 
     }
 })
@@ -45,9 +45,9 @@ $(".columnFive").click(function () {
     let columnTwoDiscCount = $('.columnTwo').children().length
 
     if ($(".disc").length % 2 == 0) {
-        $('.columnFive').append($('<div class="disc playerOneItem">test</div>'));
+        $('.columnFive').append($('<div class="disc playerOneItem"></div>'));
     } else {
-        $('.columnFive').append($('<div class="disc playerTwoItem">test</div>'));
+        $('.columnFive').append($('<div class="disc playerTwoItem"></div>'));
 
     }
 })
@@ -55,9 +55,9 @@ $(".columnSix").click(function () {
     let columnTwoDiscCount = $('.columnTwo').children().length
 
     if ($(".disc").length % 2 == 0) {
-        $('.columnSix').append($('<div class="disc playerOneItem">test</div>'));
+        $('.columnSix').append($('<div class="disc playerOneItem"></div>'));
     } else {
-        $('.columnSix').append($('<div class="disc playerTwoItem">test</div>'));
+        $('.columnSix').append($('<div class="disc playerTwoItem"></div>'));
 
     }
 })
@@ -65,9 +65,9 @@ $(".columnSeven").click(function () {
     let columnTwoDiscCount = $('.columnTwo').children().length
 
     if ($(".disc").length % 2 == 0) {
-        $('.columnSeven').append($('<div class="disc playerOneItem">test</div>'));
+        $('.columnSeven').append($('<div class="disc playerOneItem"></div>'));
     } else {
-        $('.columnSeven').append($('<div class="disc playerTwoItem">test</div>'));
+        $('.columnSeven').append($('<div class="disc playerTwoItem"></div>'));
 
     }
 })
