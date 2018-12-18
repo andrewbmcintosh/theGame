@@ -27,8 +27,8 @@ html {
     display: grid;
     background: url(style/backgroundTheGame.jpg) no-repeat;
     background-size: contain;
-    grid-template-columns: 40px 40px 40px 40px 40px 40px 40px;
-grid-gap: 5px;
+    grid-template-columns: 33px 33px 33px 33px 33px 33px 33px;
+grid-gap: ;
 }
 .disc {
 
@@ -42,7 +42,7 @@ grid-gap: 5px;
     
 }
 .playerTwoItem {
-    background: blue;
+    background: url(style/mushroomPlayerDisc30w21h.png) no-repeat;
     width: 33px;
     height: 30px;
     margin: 5px;
@@ -54,60 +54,60 @@ grid-gap: 5px;
     flex-flow: column-reverse;
 grid-gap: 5px;
 grid-column: 1;
-flex: 0 0 230px;
-min-height: 230px;
+flex: 0 0 225px;
+min-height: 225px;
 }
 .columnTwo {
     display: flex;
     flex-flow: column-reverse;
-grid-gap: 10px;
+grid-gap: 5px;
 grid-column: 2;
-flex: 0 0 230px;
-min-height: 230px;
+flex: 0 0 225px;
+min-height: 225px;
 
 }
 .columnThree {
     display: flex;
     flex-flow: column-reverse;
-grid-gap: 10px;
+grid-gap: 5px;
 grid-column: 3;
-flex: 0 0 230px;  
-min-height: 230px;
+flex: 0 0 225px;  
+min-height: 225px;
 
 }
 .columnFour {
     display: flex;
     flex-flow: column-reverse;
-grid-gap: 10px;
+grid-gap: 5px;
 grid-column: 4;
-flex: 0 0 230px;   
-min-height: 230px;
+flex: 0 0 225px;   
+min-height: 225px;
 
 }
 .columnFive {
     display: flex;
     flex-flow: column-reverse;
-grid-gap: 10px;
+grid-gap: 5px;
 grid-column: 5;
-flex: 0 0 230px; 
-min-height: 230px;
+flex: 0 0 225px; 
+min-height: 225px;
 
 }
 .columnSix {
     display: flex;
     flex-flow: column-reverse;
-grid-gap: 10px;
+grid-gap: 5px;
 grid-column: 6;
-flex: 0 0 230px;   
-min-height: 230px;
+flex: 0 0 225px;   
+min-height: 225px;
 
 }
 .columnSeven {
     display: flex;
     flex-flow: column-reverse;
-grid-gap: 10px;
+grid-gap: 5px;
 grid-column: 7;
-flex: 0 0 230px; 
-min-height: 230px;
+flex: 0 0 225px; 
+min-height: 225px;
 
 }

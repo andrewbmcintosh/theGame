@@ -3,7 +3,9 @@ let playerTwoScore = 0;
 
 
 $(".columnOne").click(function () {
-
+    if ($('.columnOne .disc').length == 6) {
+        return;
+    }
     if ($(".disc").length % 2 == 0) {
         $('.columnOne').append($('<div class="disc playerOneItem"></div>'));
     } else {
@@ -12,18 +14,21 @@ $(".columnOne").click(function () {
     }
 })
 $(".columnTwo").click(function () {
-
+    if ($('.columnTwo .disc').length == 6) {
+        return;
+    }
     if ($(".disc").length % 2 == 0) {
         $('.columnTwo').append($('<div class="disc playerOneItem"></div>'));
     } else {
         $('.columnTwo').append($('<div class="disc playerTwoItem"></div>'));
-
     }
 })
 
 $(".columnThree").click(function () {
     let columnTwoDiscCount = $('.columnTwo').children().length
-
+    if ($('.columnThree .disc').length == 6) {
+        return;
+    }
     if ($(".disc").length % 2 == 0) {
         $('.columnThree').append($('<div class="disc playerOneItem"></div>'));
     } else {
@@ -33,7 +38,9 @@ $(".columnThree").click(function () {
 })
 $(".columnFour").click(function () {
     let columnTwoDiscCount = $('.columnTwo').children().length
-
+    if ($('.columnFour .disc').length == 6) {
+        return;
+    }
     if ($(".disc").length % 2 == 0) {
         $('.columnFour').append($('<div class="disc playerOneItem"></div>'));
     } else {
@@ -43,7 +50,9 @@ $(".columnFour").click(function () {
 })
 $(".columnFive").click(function () {
     let columnTwoDiscCount = $('.columnTwo').children().length
-
+    if ($('.columnFive .disc').length == 6) {
+        return;
+    }
     if ($(".disc").length % 2 == 0) {
         $('.columnFive').append($('<div class="disc playerOneItem"></div>'));
     } else {
@@ -52,6 +61,9 @@ $(".columnFive").click(function () {
     }
 })
 $(".columnSix").click(function () {
+    if ($('.columnSix .disc').length == 6) {
+        return;
+    }
     let columnTwoDiscCount = $('.columnTwo').children().length
 
     if ($(".disc").length % 2 == 0) {
@@ -63,7 +75,9 @@ $(".columnSix").click(function () {
 })
 $(".columnSeven").click(function () {
     let columnTwoDiscCount = $('.columnTwo').children().length
-
+    if ($('.columnSeven .disc').length == 6) {
+        return;
+    }
     if ($(".disc").length % 2 == 0) {
         $('.columnSeven').append($('<div class="disc playerOneItem"></div>'));
     } else {
