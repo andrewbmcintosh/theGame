@@ -19,21 +19,23 @@ html {
     /* min-height: 768px; */
     width: 1440;
     /* min-width: 1152px;; */
-    position: fixed center;
-    pointer-events: none;
-
+    position: center;
+display: grid;
+grid-template-rows: repeat(40, 1fr);
+grid-template-columns: repeat(50, 1fr);
 
 }
 .container {
     position: relative;
+    border: red;
+    grid-area: 7/16/20/30; 
     display: grid;
     background: url(style/backgroundTheGame.jpg) no-repeat;
-    background-size: contain;
-    grid-template-columns: 33px 33px 33px 33px 33px 33px 33px;
-top: 128px;
+    background-size: cover;
+    grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%
+/* top: 128px;
 left: 373px;
-right: 676;
-z-index: ;
+right: 676; */
 }
 .disc {
 
@@ -53,8 +55,8 @@ z-index: ;
     margin: 5px;
     
 }
-/* the column grids */
-.columnOne {
+/* the column grids  */
+ .columnOne {
     display: flex;
     flex-flow: column-reverse;
 grid-gap: 5px;
