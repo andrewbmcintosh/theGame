@@ -52,16 +52,16 @@ grid-gap: 10px;
     flex-flow: column-reverse;
 grid-gap: 10px;
 grid-column: 1;
-flex: 0 0 300px;
-min-height: 290px;
+flex: 0 0 230px;
+min-height: 230px;
 }
 .columnTwo {
     display: flex;
     flex-flow: column-reverse;
 grid-gap: 10px;
 grid-column: 2;
-flex: 0 0 300px;
-min-height: 30px;
+flex: 0 0 230px;
+min-height: 230px;
 
 }
 .columnThree {
@@ -69,8 +69,8 @@ min-height: 30px;
     flex-flow: column-reverse;
 grid-gap: 10px;
 grid-column: 3;
-flex: 0 0 300px;  
-min-height: 30px;
+flex: 0 0 230px;  
+min-height: 230px;
 
 }
 .columnFour {
@@ -78,8 +78,8 @@ min-height: 30px;
     flex-flow: column-reverse;
 grid-gap: 10px;
 grid-column: 4;
-flex: 0 0 300px;   
-min-height: 30px;
+flex: 0 0 230px;   
+min-height: 230px;
 
 }
 .columnFive {
@@ -87,8 +87,8 @@ min-height: 30px;
     flex-flow: column-reverse;
 grid-gap: 10px;
 grid-column: 5;
-flex: 0 0 300px; 
-min-height: 30px;
+flex: 0 0 230px; 
+min-height: 230px;
 
 }
 .columnSix {
@@ -96,8 +96,8 @@ min-height: 30px;
     flex-flow: column-reverse;
 grid-gap: 10px;
 grid-column: 6;
-flex: 0 0 300px;   
-min-height: 30px;
+flex: 0 0 230px;   
+min-height: 230px;
 
 }
 .columnSeven {
@@ -105,7 +105,7 @@ min-height: 30px;
     flex-flow: column-reverse;
 grid-gap: 10px;
 grid-column: 7;
-flex: 0 0 300px; 
-min-height: 30px;
+flex: 0 0 230px; 
+min-height: 230px;
 
 }
