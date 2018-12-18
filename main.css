@@ -13,7 +13,7 @@ html {
     background-size: cover;
 } */
 .screen{
-    background: url(style/hiresgrainyedit.png) no-repeat center fixed; 
+    background: url(style/hiresgrainywithWordArt.png) no-repeat center fixed; 
     background-size: cover ;
     height: 780px;
     /* min-height: 768px; */
@@ -25,6 +25,27 @@ grid-template-rows: repeat(400, 1fr);
 grid-template-columns: repeat(500, 1fr);
 
 }
+.playerOneScore {
+ position: absolute;
+top: 280px;
+left:146px;
+right:200px;
+bottom: 343px; 
+color: white;
+font-size: 80px;
+
+} 
+
+.playerTwoScore {
+    position: absolute;
+   top: 260px;
+   left:1147px;
+   right:1193px;
+   bottom: 343px; 
+   color: white;
+   font-size: 80px;
+   } 
+
 #masked {
     -webkit-mask-image: url("https://jooinn.com/images/tv-screen-texture-31.jpg");
     mask-image: url("https://jooinn.com/images/tv-screen-texture-31.jpg");
