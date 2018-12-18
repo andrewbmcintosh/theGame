@@ -1,12 +1,28 @@
 body {
-    background-image: url("style/siteBackground.png");
-    height: 100%;
+}
+
+html {
+
+
+  }
+/* .bg{
+    background-image: url("style/hiresgrainyedit.png");
+    height:100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+} */
+.screen{
+    background: url(style/hiresgrainyedit.png) no-repeat center fixed; 
+    background-size: cover ;
+    height: 780px;
+    /* min-height: 768px; */
+    width: 1440;
+    /* min-width: 1152px;; */
+    position: fixed center;
+
+
 }
-
-
 .container {
     display: grid;
     grid-template-columns: 40px 40px 40px 40px 40px 40px 40px;
@@ -18,15 +34,15 @@ grid-gap: 10px;
 
 .playerOneItem {
     background: red;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     margin: 5px;
     
 }
 .playerTwoItem {
     background: blue;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     margin: 5px;
     
 }
