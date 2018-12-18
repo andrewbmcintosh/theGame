@@ -6,7 +6,7 @@ The game has a few features. The game has a scoreboard that keeps track of the p
 
 
 Wireframe
-
+(https://imgur.com/02c9fd58-60ff-44fd-8650-645e43c6cbd7)
 
 Future development
 -sound when a player drops a disc
