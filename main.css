@@ -20,15 +20,20 @@ html {
     width: 1440;
     /* min-width: 1152px;; */
     position: fixed center;
+    pointer-events: none;
 
 
 }
 .container {
+    position: relative;
     display: grid;
     background: url(style/backgroundTheGame.jpg) no-repeat;
     background-size: contain;
     grid-template-columns: 33px 33px 33px 33px 33px 33px 33px;
-grid-gap: ;
+top: 128px;
+left: 373px;
+right: 676;
+z-index: ;
 }
 .disc {
 
